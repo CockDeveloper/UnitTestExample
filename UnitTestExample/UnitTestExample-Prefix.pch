@@ -1,0 +1,38 @@
+//
+//  UnitTestExample-Prefix.pch
+//  UnitTestExample
+//
+//  Created by Nguyễn Trọng Anh Tuấn on 09/04/2018.
+//  Copyright © 2018 Nguyễn Trọng Anh Tuấn. All rights reserved.
+//
+
+#ifndef UnitTestExample_Prefix_pch
+#define UnitTestExample_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "ViewController.h"
+
+#else
+#ifndef FOUNDATION_EXPORT
+#if defined(__cplusplus)
+#define FOUNDATION_EXPORT extern "C"
+#else
+#define FOUNDATION_EXPORT extern
+#endif
+#endif
+#endif
+
+
+#endif /* UnitTestExample_Prefix_pch */
